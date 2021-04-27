@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\App;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,3 +28,26 @@ Route::get('/hotel/demo1', function () {
 Route::get('/hotel/demo2', function () {
     return view('hotel.demo2.index');
 });
+Route::get('/salon/demo1', function () {
+    session('lang') == 'ar' ? App::setLocale('ar') : App::setLocale('en') ;
+    return view('salon.demo1.index');
+});
+Route::get('/salon/demo1/about-us', function () {
+    session('lang') == 'ar' ? App::setLocale('ar') : App::setLocale('en') ;
+    return view('salon.demo1.aboutus');
+});
+Route::get('/salon/demo1/services', function () {
+    session('lang') == 'ar' ? App::setLocale('ar') : App::setLocale('en') ;
+    return view('salon.demo1.services');
+});
+Route::get('/salon/demo1/contact-us', function () {
+    session('lang') == 'ar' ? App::setLocale('ar') : App::setLocale('en') ;
+    return view('salon.demo1.contact');
+});
+Route::POST('/lang/{lang}/{target}',function($lang,$target){
+    session([
+        'lang' => $lang == 'en' ? 'ar' : 'en'
+    ]);
+    return redirect(base64_decode($target));
+});
+
