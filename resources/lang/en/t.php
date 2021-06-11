@@ -60,6 +60,10 @@ return [
     "subject" => "Subject",
     "submit" => "Submit",
     "our_team" => "Our Team",
-    "meet_our_therapists" => "Meet Our Therapists"
+    "meet_our_therapists" => "Meet Our Therapists",
+
+
+    //translations for the Main Website
+    'website_heading'=> "Build Something that matters."
 
 ];

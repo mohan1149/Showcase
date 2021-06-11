@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\App;
 */
 
 Route::get('/', function () {
+    session('lang') == 'ar' ? App::setLocale('ar') : App::setLocale('en') ;
     return view('welcome');
 });
 Route::get('/food/demo1', function () {
