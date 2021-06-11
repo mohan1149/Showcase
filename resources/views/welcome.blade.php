@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
-<title>Sahas Systems</title>
+<title>Sahas Information & Hosting Systems</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href={{ asset('/assets/css/style.css') }}>
+<link rel="stylesheet" href='/assets/css/style.css'>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/2d6b835a4d.js" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-<script src="{{ asset('/assets/js/master.js') }}"></script>
+<script src='/assets/js/master.js'></script>
 <style>
 </style>
 <body>
@@ -1147,7 +1147,7 @@
     	// 	});
 		// });
     </script>
-    {{-- <script src="{{ asset('/assets/js/deer-animation.js') }}"></script>
-    <script src="{{ asset('/assets/js/line-animation.js') }}"></script> --}}
+    <script src="{{ asset('/assets/js/deer-animation.js') }}"></script>
+    <script src="{{ asset('/assets/js/line-animation.js') }}"></script>
 </body>
 </html>
