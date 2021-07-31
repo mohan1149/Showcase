@@ -64,6 +64,6 @@ return [
 
 
     //translations for the Main Website
-    'website_heading'=> "Build Something that matters."
+    'website_heading'=> "Sahas Information Systems.!"
 
 ];

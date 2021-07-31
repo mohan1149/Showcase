@@ -152,6 +152,11 @@ html,body,section,div,pre,p,span,a,header,footer,h1,h2,h3,h4,h5,h6{
   .slider.round:before {
     border-radius: 50%;
   }
-/* .tech-stack-container div i{
-    font-size: 150px;
-} */
+    .owl-nav{
+        display: flex !important;
+        justify-content: space-around !important;
+        align-items: center !important;
+    }
+  .owl-next,.owl-prev{
+      font-size: 30px !important;
+  }
